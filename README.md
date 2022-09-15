@@ -1,7 +1,11 @@
+# 仓库说明
+在 https://github.com/polossk/LaTeX-Template-For-NPU-Thesis 基础上，按照22年本科毕设要求做了修改，感谢原作者
+| TeXLive Environment    | Status             |
+| ---------------------- | ------------------ |
+| ![TeXLive2022]         | :heavy_check_mark: |
+
+
 # LaTeX Template For NPU thesis
-在https://github.com/polossk/LaTeX-Template-For-NPU-Thesis基础上，按照22年本科毕设要求做了修改，感谢原作者
-
-
 ![TeX-Document](https://img.shields.io/badge/TeX-Document-3D6117.svg)
 [![License](https://img.shields.io/badge/license-GNU_General_Public_License_v3.0-blue.svg)](LICENSE)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen.svg)
@@ -14,7 +18,7 @@
 | ![TeXLive2018](https://img.shields.io/badge/TeXLive-2018-3D6117.svg) | :heavy_check_mark: |
 | ![TeXLive2019](https://img.shields.io/badge/TeXLive-2019-3D6117.svg) | :heavy_check_mark: |
 | ![TeXLive2020](https://img.shields.io/badge/TeXLive-2020-3D6117.svg) | :heavy_check_mark: |
-| ![TeXLive2022](https://img.shields.io/badge/TeXLive-2020-3D6117.svg) | :heavy_check_mark: |
+
 
 这是在西北工业大学本科毕业设计论文格式的要求下的一份 LaTeX 文档类型模板。使用者无需修改导言区文档类型，直接在发布版的基础上，修改章节标题，撰写内容，即可完成毕业设计论文任务。
 
