@@ -1,8 +1,8 @@
 # 仓库说明
 在 https://github.com/polossk/LaTeX-Template-For-NPU-Thesis 基础上，按照22年本科毕设要求做了修改，感谢原作者
-| TeXLive Environment    | Status             |
+| NWPU Standard          | Status             |
 | ---------------------- | ------------------ |
-| ![TeXLive2022]         | :heavy_check_mark: |
+| ![2022]                | :heavy_check_mark: |
 
 
 # LaTeX Template For NPU thesis
