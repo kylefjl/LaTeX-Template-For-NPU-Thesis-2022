@@ -1,0 +1,89 @@
+\documentclass[12pt,a4paper,openany,oneside]{book}
+
+% 格式控制
+\input{settings/thesis-setting}
+
+% 非格式控制插件
+% \usepackage{math-symbols}
+\usepackage{plug-ins/math-symbols}
+\usepackage{enumitem}
+
+\input{plug-ins/aerocoeffs}
+
+% 插图目录
+\graphicspath{{figures/}}
+
+% 仅用于测试
+\usepackage{blindtext}
+
+\title{\textsf{比如我举个例子}}
+\author{{\kai 谁知道呢}}
+\date{May 20, 20xx}
+
+\begin{document}
+
+\sloppy
+
+\pagenumbering{Roman}
+
+% 封皮
+\frontmatter
+\input{settings/cover.tex}
+%\myemptypage  空一页
+\clearpage
+
+\setcounter{page}{1}
+\pagenumbering{Roman}
+\renewcommand{\baselinestretch}{1.25}
+
+% 中文摘要
+\include{preface/c_abstract}
+%\myemptypage 空一页
+% 英文摘要
+\include{preface/e_abstract}
+%\myemptypage 空一页
+
+\renewcommand{\baselinestretch}{1.25}
+\fontsize{12pt}{12pt}\selectfont
+\phantomsection
+\tableofcontents
+\clearpage
+
+\mainmatter
+
+\renewcommand{\baselinestretch}{1.25}
+\sHalfXiaosi\fSong
+
+% 正文内容
+\input{chapters/chapter01.tex}
+\input{chapters/chapter02.tex}
+\input{chapters/chapter03.tex}
+%\myemptypage
+%\myemptypage
+\input{chapters/chapter04.tex}
+%\myemptypage
+%\myemptypage
+\input{chapters/chapter05.tex}
+\input{chapters/chapter06.tex}
+
+% 参考文献设置
+\clearpage
+\phantomsection
+% \chapter*{参考文献}
+\addcontentsline{toc}{chapter}{\bf \fSong 参考文献}
+% npu专用
+\bibliographystyle{settings/nputhesis}
+\renewcommand{\baselinestretch}{1.25}  
+\setlength{\bibsep}{0.5ex} 
+% 参考文献位置
+\bibliography{references/reference}
+% 附录
+\backmatter
+%\myemptypage
+\input{appendix/acknowledgements.tex}
+%\myemptypage
+\input{appendix/design-conclusion.tex}
+% \input{appendix/appendix.tex}
+
+\clearpage
+\end{document}
